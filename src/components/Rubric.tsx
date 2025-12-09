@@ -32,10 +32,10 @@ export function Rubric() {
         },
         {
             name: "Technical Implementation (20%)",
-            excellent: "Clean, semantic, and efficient code. Demonstrates mastery of modern web technologies and best practices. Deployed flawlessly.",
-            good: "Code is well-organized and follows good practices. Use of appropriate web technologies is evident. Deployment is stable.",
-            fair: "Code is functional but may be messy, inefficient, or outdated. Technical choices may not be optimal. Some deployment issues may be present.",
-            needsImprovement: "Code is poorly written, non-semantic, and contains significant errors. Fails to use modern technologies or best practices correctly.",
+            excellent: "Expert use of WYSIWYG/No-code platforms (e.g., WordPress, Figma) demonstration. Layout is flawless, fully responsive, and assets are perfectly optimized. Platform features are utilized to their full potential.",
+            good: "Effective use of chosen platform. Layout is clean and responsive. Assets are generally well-optimized. Platform features are used correctly.",
+            fair: "Basic use of platform features. Layout has some minor issues or inconsistencies on different devices. Assets may not be fully optimized.",
+            needsImprovement: "Poor use of platform. Layout is broken or not responsive. Assets are missing or unoptimized. Fails to demonstrate basic competency with the tool.",
         },
     ]
 
