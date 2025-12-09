@@ -10,32 +10,32 @@ import {
 export function Rubric() {
     const criteria = [
         {
-            name: "UX Research & Empathy (Pages 1 & 2)",
-            exceptional: "Brainstorming & Persona: Deep understanding of the Filipino context. Persona is highly detailed and realistic. The problem statement is sharp and actionable. Journey map clearly highlights pain points.",
-            proficient: "Brainstorming & Persona: Good understanding of the context. Persona is clear but may lack specific local nuance. The problem statement is defined. Journey map is present.",
-            developing: "Brainstorming & Persona: Generic persona (e.g., \"John Doe\"). The problem statement is too broad. The brainstorming map is sparse or disorganized.",
-            needsImprovement: "Brainstorming & Persona: Missing deliverables or completely unrealistic user definitions. No clear problem identified.",
+            name: "Design & Aesthetics (25%)",
+            excellent: "Visually stunning, with a unique and professional layout. Excellent use of color, typography, and imagery that creates a cohesive and memorable brand identity.",
+            good: "Professional and clean design. Good use of color and typography. Layout is well-organized and visually appealing.",
+            fair: "Basic, template-like design. Some inconsistencies in visual elements. The overall look is average but functional.",
+            needsImprovement: "Poor design choices. Inconsistent or distracting layout, typography, and color scheme. Lacks professional appeal.",
         },
         {
-            name: "Interaction Design (Page 3 - LowFi)",
-            exceptional: "Wireframes: Excellent use of whitespace and hierarchy. Navigation flow is intuitive. Solves the core problem without distraction. All 5+ screens are structurally sound.",
-            proficient: "Wireframes: Good layout and structure. Navigation works well. Some minor alignment or spacing issues. Meets the 5-screen requirement.",
-            developing: "Wireframes: Confusing layout or navigation. Elements are cluttered. Hard to understand the flow without explanation.",
-            needsImprovement: "Wireframes: Missing screens. Incomplete wireframes. \"Low-fi\" looks like a rough sketch rather than a digital wireframe.",
+            name: "Content & Personal Branding (30%)",
+            excellent: "Content is exceptionally well-written, compelling, and clearly articulates a strong personal brand. Portfolio pieces are high-quality and effectively showcase skills and expertise.",
+            good: "Content is clear, well-written, and establishes a consistent personal brand. Portfolio showcases a good range of skills through quality work.",
+            fair: "Content is adequate but may contain errors or lack a clear brand voice. Portfolio includes some relevant work, but the presentation could be stronger.",
+            needsImprovement: "Content is sparse, poorly written, or fails to convey a professional brand. Portfolio pieces are weak, irrelevant, or missing.",
         },
         {
-            name: "Visual Design (Page 4 - HiFi)",
-            exceptional: "UI Design: Professional, modern aesthetic. Typography and color choices are accessible (WCAG standards) and appropriate for the theme. rigorous consistency in design elements.",
-            proficient: "UI Design: Pleasing aesthetic. Consistent use of colors and fonts. Some minor accessibility issues (e.g., low contrast text).",
-            developing: "UI Design: Inconsistent design. Too many different fonts or colors are used. Looks \"unfinished\" or dated.",
-            needsImprovement: "UI Design: Poor color choices make text unreadable. Layout breaks on the mobile frame—little effort in aesthetics.",
+            name: "Functionality & User Experience (UX) (25%)",
+            excellent: "Flawless navigation, intuitive user flow, and excellent performance across all devices (fully responsive). All links and interactive elements work perfectly.",
+            good: "Easy to navigate with a logical structure. The site is responsive and performs well. Only minor, isolated usability issues.",
+            fair: "Navigation is generally functional but may be confusing in some areas. The site may have some responsiveness or performance issues on certain devices.",
+            needsImprovement: "Difficult to navigate, with broken links or non-functional elements. Poor responsiveness and slow performance significantly hinder the user experience.",
         },
         {
-            name: "Figma Technical Skills (Prototyping)",
-            exceptional: "Prototyping: Prototype feels like a real app. \"Smart Animate\" is used effectively. Components and Auto-layout are used correctly in the file structure. Zero broken links.",
-            proficient: "Prototyping: Click-through works for all major paths. Basic transitions are applied. The file is organized but might not use advanced Auto-layout features.",
-            developing: "Prototyping: Some broken links (dead ends). Transitions are jarring or missing. File layers are messy (e.g., \"Frame 123\", \"Rectangle 45\").",
-            needsImprovement: "Prototyping: No interactivity/prototyping connections. Static images only. The file is completely disorganized.",
+            name: "Technical Implementation (20%)",
+            excellent: "Clean, semantic, and efficient code. Demonstrates mastery of modern web technologies and best practices. Deployed flawlessly.",
+            good: "Code is well-organized and follows good practices. Use of appropriate web technologies is evident. Deployment is stable.",
+            fair: "Code is functional but may be messy, inefficient, or outdated. Technical choices may not be optimal. Some deployment issues may be present.",
+            needsImprovement: "Code is poorly written, non-semantic, and contains significant errors. Fails to use modern technologies or best practices correctly.",
         },
     ]
 
@@ -43,7 +43,7 @@ export function Rubric() {
         <section id="rubric" className="w-full py-12 md:py-24 lg:py-32 bg-background">
             <div className="container px-4 md:px-6">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">
-                    Grading Rubric (100 Points)
+                    Portfolio Evaluation Rubric
                 </h2>
                 <div className="bg-card/80 backdrop-blur-sm border border-border/40 rounded-lg overflow-hidden">
                     <div className="rounded-md border overflow-x-auto">
@@ -51,19 +51,19 @@ export function Rubric() {
                             <TableHeader>
                                 <TableRow>
                                     <TableHead className="w-[200px]">Criteria</TableHead>
-                                    <TableHead>Exceptional (21-25 pts)</TableHead>
-                                    <TableHead>Proficient (16-20 pts)</TableHead>
-                                    <TableHead>Developing (11-15 pts)</TableHead>
-                                    <TableHead>Needs Improvement (0-10 pts)</TableHead>
+                                    <TableHead>Excellent (4 pts)</TableHead>
+                                    <TableHead>Good (3 pts)</TableHead>
+                                    <TableHead>Fair (2 pts)</TableHead>
+                                    <TableHead>Needs Improvement (1 pt)</TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
                                 {criteria.map((item, index) => (
                                     <TableRow key={index}>
                                         <TableCell className="font-medium">{item.name}</TableCell>
-                                        <TableCell>{item.exceptional}</TableCell>
-                                        <TableCell>{item.proficient}</TableCell>
-                                        <TableCell>{item.developing}</TableCell>
+                                        <TableCell>{item.excellent}</TableCell>
+                                        <TableCell>{item.good}</TableCell>
+                                        <TableCell>{item.fair}</TableCell>
                                         <TableCell>{item.needsImprovement}</TableCell>
                                     </TableRow>
                                 ))}
