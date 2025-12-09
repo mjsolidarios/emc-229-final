@@ -11,7 +11,7 @@ interface TimeLeft {
 
 export function CountdownTimer() {
     const calculateTimeLeft = (): TimeLeft => {
-        const deadline = new Date('2025-12-19T23:59:59+08:00')
+        const deadline = new Date('2025-12-15T23:59:59+08:00')
         const now = new Date()
         const difference = deadline.getTime() - now.getTime()
 
@@ -58,7 +58,7 @@ export function CountdownTimer() {
                     <h2 className="text-2xl md:text-3xl font-bold">Project Deadline</h2>
                 </div>
                 <p className="text-base md:text-lg text-muted-foreground font-medium">
-                    December 19, 2025 • 11:59 PM
+                    December 15, 2025 • 11:59 PM
                 </p>
             </div>
             <Card className="bg-card/95 backdrop-blur-md border-2 border-border p-8 md:p-10">

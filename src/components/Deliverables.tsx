@@ -8,7 +8,7 @@ export function Deliverables() {
                     Project Deliverables
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-[700px] mx-auto">
-                    To complete your final project, please submit the following two items. Ensure they are submitted by the deadline.
+                    Please submit the following items:
                 </p>
 
                 <div className="w-full max-w-3xl mx-auto bg-card/80 backdrop-blur-sm border border-border/40 rounded-lg p-4">
@@ -19,42 +19,46 @@ export function Deliverables() {
                             </AccordionTrigger>
                             <AccordionContent className="space-y-4">
                                 <p className="text-muted-foreground">
-                                    A short video walkthrough of your personal website portfolio.
+                                    A short video (5-10 minutes) where you walk through your portfolio, explaining the content, design choices, and showcasing your best work.
                                 </p>
-                                <div className="space-y-2">
-                                    <h4 className="font-semibold">Content Requirements:</h4>
-                                    <ul className="list-disc list-inside space-y-1">
-                                        <li><strong>Duration:</strong> 5-10 minutes.</li>
-                                        <li><strong>Content:</strong> Explain your design choices, walk through the different sections of your portfolio, and highlight your best work.</li>
-                                        <li><strong>Format:</strong> Upload the video to a platform of your choice (e.g., YouTube, Vimeo, Google Drive) and ensure the link is accessible.</li>
-                                    </ul>
-                                </div>
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-2">
                             <AccordionTrigger className="text-lg font-semibold">
-                                2. Link to Online Portfolio
+                                2. Portfolio Link
                             </AccordionTrigger>
                             <AccordionContent className="space-y-4">
-                                <div className="space-y-2">
-                                    <h4 className="font-semibold">Requirement:</h4>
-                                    <p>The live, publicly accessible URL of your completed personal website portfolio.</p>
-                                </div>
-                                <div className="space-y-2">
-                                    <h4 className="font-semibold">Checklist before submitting:</h4>
-                                    <ul className="list-disc list-inside space-y-1">
-                                        <li>Ensure the website is fully responsive and works on different screen sizes.</li>
-                                        <li>All links should be functional.</li>
-                                        <li>Proofread all text content for any spelling or grammatical errors.</li>
-                                        <li>Optimize images and assets for fast loading times.</li>
-                                    </ul>
-                                </div>
+                                <p className="text-muted-foreground">
+                                    The live URL to your updated online portfolio.
+                                </p>
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
+                </div>
+
+                <div className="w-full max-w-3xl mx-auto mt-8 bg-card/80 backdrop-blur-sm border border-border/40 rounded-lg p-6">
+                    <h3 className="text-xl font-bold mb-4">How to Submit</h3>
+                    <div className="space-y-4">
+                        <div>
+                            <p className="mb-2 text-muted-foreground">Send your submission via email to:</p>
+                            <a href="mailto:mjsolidarios@wvsu.edu.ph" className="text-primary hover:underline font-medium text-lg">
+                                mjsolidarios@wvsu.edu.ph
+                            </a>
+                        </div>
+                        <div>
+                            <p className="mb-2 text-muted-foreground">Subject Line Format:</p>
+                            <div className="bg-muted p-4 rounded-md font-mono text-sm">
+                                [EMC 229 FINAL] &lt;Lastname&gt;
+                            </div>
+                            <p className="text-sm text-muted-foreground mt-2">
+                                Example: <span className="font-medium text-foreground">[EMC 229 FINAL] Solidarios</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     )
 }
+

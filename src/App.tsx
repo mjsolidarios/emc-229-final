@@ -2,7 +2,6 @@ import { Starfield } from "@/components/Starfield"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 import { Overview } from "@/components/Overview"
-import { Tracks } from "@/components/Tracks"
 import { Deliverables } from "@/components/Deliverables"
 import { Submission } from "@/components/Submission"
 import { Rubric } from "@/components/Rubric"
@@ -18,7 +17,6 @@ function App() {
         <main>
           <Hero />
           <Overview />
-          <Tracks />
           <Deliverables />
           <Submission />
           <Rubric />

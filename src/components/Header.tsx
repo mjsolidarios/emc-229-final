@@ -18,20 +18,17 @@ export function Header() {
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/80">
             <div className="container flex h-14 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center gap-2 font-bold text-xl">
-                    <span>EMC 204</span>
+                    <span>EMC 229</span>
                 </div>
                 <nav className="hidden md:flex gap-6">
                     <button onClick={() => scrollToSection("overview")} className="text-sm font-medium hover:underline underline-offset-4">
                         Overview
                     </button>
-                    <button onClick={() => scrollToSection("tracks")} className="text-sm font-medium hover:underline underline-offset-4">
-                        Tracks
-                    </button>
                     <button onClick={() => scrollToSection("deliverables")} className="text-sm font-medium hover:underline underline-offset-4">
                         Deliverables
                     </button>
-                    <button onClick={() => scrollToSection("submission")} className="text-sm font-medium hover:underline underline-offset-4">
-                        Submission
+                    <button onClick={() => scrollToSection("exemptions")} className="text-sm font-medium hover:underline underline-offset-4">
+                        Exemptions
                     </button>
                     <button onClick={() => scrollToSection("rubric")} className="text-sm font-medium hover:underline underline-offset-4">
                         Rubric
@@ -52,14 +49,11 @@ export function Header() {
                         <button onClick={() => scrollToSection("overview")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
                             Overview
                         </button>
-                        <button onClick={() => scrollToSection("tracks")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
-                            Tracks
-                        </button>
                         <button onClick={() => scrollToSection("deliverables")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
                             Deliverables
                         </button>
-                        <button onClick={() => scrollToSection("submission")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
-                            Submission
+                        <button onClick={() => scrollToSection("exemptions")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
+                            Exemptions
                         </button>
                         <button onClick={() => scrollToSection("rubric")} className="text-sm font-medium hover:underline underline-offset-4 text-left">
                             Rubric
@@ -70,3 +64,4 @@ export function Header() {
         </header>
     )
 }
+
